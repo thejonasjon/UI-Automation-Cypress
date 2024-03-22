@@ -1,0 +1,30 @@
+{
+  "name": "ui-automation-cypress",
+  "version": "1.0.0",
+  "description": "UI Automation using TypeScript-Cypress-Cucumber-POM-BDD.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thejonasjon/UI-Automation-Cypress.git"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "jonas john",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thejonasjon/UI-Automation-Cypress/issues"
+  },
+  "homepage": "https://github.com/thejonasjon/UI-Automation-Cypress#readme",
+  "devDependencies": {
+    "cypress": "^13.7.1",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/e2e/src/tests"
+  }
+}
