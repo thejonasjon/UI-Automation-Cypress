@@ -5,22 +5,22 @@ class ProductSearchPage {
    }
 
    clickHamburgerMenu() {
-        cy.wait(5000)
+        cy.wait(5000) // This not a best practice but I could not figure wired behaviour of autoreload.
         cy.get(Cypress.ProductSearchSelectors.hamburgerMenu).click()
     }
 
     verifyPageTitle() {
-        cy.wait(5000)
+        cy.wait(5000) // This not a best practice but I could not figure wired behaviour of autoreload.
         cy.VerifyHmenuTitle(Cypress.ProductSearchSelectors.hamburgerMenuTitle, 'Digital Content & Devices')
    }
 
    clickComputer(){
-        cy.wait(5000)
+        cy.wait(5000) // This not a best practice but I could not figure wired behaviour of autoreload.
         cy.selectCategory(Cypress.ProductSearchSelectors.hmenuComputer, 'Computer')
    }
 
    clickTableAccessories(){
-        cy.wait(5000)
+        cy.wait(5000) // This not a best practice but I could not figure wired behaviour of autoreload.
         cy.get(Cypress.ProductSearchSelectors.hmenuTabletAccessories).eq(0).scrollIntoView().click({force: true})
    }
 
